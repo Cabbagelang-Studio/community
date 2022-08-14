@@ -22,5 +22,28 @@
     </div>
     <h1>Coming Soon...</h1>
     <a href="http://www.cabbagelang.xyz/">Go back to home page</a>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyC6w-HQ5WaEe5XjTanFhnJbtKTi56IBfnY",
+        authDomain: "cabbagelang-data.firebaseapp.com",
+        projectId: "cabbagelang-data",
+        storageBucket: "cabbagelang-data.appspot.com",
+        messagingSenderId: "232658810461",
+        appId: "1:232658810461:web:693a91fcd7ca74e1423fb4",
+        measurementId: "G-TJ2YFB9JSL"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
