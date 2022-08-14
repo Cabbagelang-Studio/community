@@ -23,6 +23,19 @@
     </style>
   </head>
   <body bgcolor="#1E415E">
+    <script>
+      import { collection, addDoc } from "firebase/firestore";
+      try {
+        const docRef = await addDoc(collection(db, community"), {
+          first: "Ada",
+          last: "Lovelace",
+          born: 1815
+        });
+        console.log("Document written with ID: ", docRef.id);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+    </script>
     <div id="top" class="top">
       <img id="favicon" src="http://www.cabbagelang.xyz/favicon.png"/>
       <font size="6" color="white">Cabbagelang-A Good Programming Language</font>
