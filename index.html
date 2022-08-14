@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <style>
       body{color:white}
     </style>
@@ -20,6 +22,19 @@
       <img id="favicon" src="http://www.cabbagelang.xyz/favicon.png"/>
       <font size="6" color="white">Cabbagelang-A Good Programming Language</font>
     </div>
+    <script>
+    db.collection("users").add({
+        first: "Ada",
+        last: "Lovelace",
+        born: 1815
+    })
+    .then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+    })
+    .catch((error) => {
+        console.error("Error adding document: ", error);
+    });
+    </script>
     <h1>Coming Soon...</h1>
     <a href="http://www.cabbagelang.xyz/">Go back to home page</a>
     <script type="module">
